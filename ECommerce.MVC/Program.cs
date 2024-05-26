@@ -13,7 +13,7 @@ builder.Services.AddControllersWithViews();
 builder.Configuration.GetConnectionString("");
 
 //DbContext
-builder.Services.AddDbContext<ECommerceContext>(options=>options.UseSqlServer("server=BEYZA\\SQLEXPRESS; database=Nortwind;Trusted_Connection=True;TrustServerCertificate=true"));
+builder.Services.AddDbContext<ECommerceContext>(options=>options.UseSqlServer("server=BEYZA\\SQLEXPRESS; database=ECommerceDB;Trusted_Connection=True;TrustServerCertificate=true"));
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
 builder.Services.AddScoped<ICategoryService, CategoryService>();//bunu categorycontrollerda inject edeceğiz.

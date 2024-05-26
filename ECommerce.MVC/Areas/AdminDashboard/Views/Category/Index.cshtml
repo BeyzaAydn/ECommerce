@@ -1,0 +1,17 @@
+﻿@model ECommerce.Model.Entities.Category
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminDashboard/Views/Shared/_AdminDashboardLayout.cshtml";
+}
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Model.CategoryName</li>
+            <li class="list-group-item">@Model.Description</li>
+           
+        </ul>
+    </div>
+</div>
+
